@@ -6,7 +6,7 @@ const SecureApp = () => (
   <Auth0Provider
     domain="dev-imj8g6mp.us.auth0.com"
     clientId="dfx43OD6WJH7CAAdKulxEAk48lQjezUe"
-    redirectUri={window.location.origin}
+    redirectUri="https://updown-fe.pages.dev/"
   >
     <App />
   </Auth0Provider>

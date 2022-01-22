@@ -1,16 +1,20 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style.css';
+import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from '../loginButton.js';
 
-const Header = () => (
-  <header class={style.header}>
-    <h1>Preact App</h1>
-    <nav>
-      <Link activeClassName={style.active} href="/">Home</Link>
-      <Link activeClassName={style.active} href="/profile">Me</Link>
-      <Link activeClassName={style.active} href="/profile/john">John</Link>
-    </nav>
-  </header>
-);
+
+
+const Header = () => {
+  return (
+    <header class={style.header}>
+      <h1>Up or Down?</h1>
+      <nav>
+        <LoginButton />
+      </nav>
+    </header>
+  )
+}
 
 export default Header;

@@ -10,7 +10,7 @@ const LogoutButton = () => {
   }
 
   if (isAuthenticated) {
-    return <button onClick={ () => logout({ returnTo: window.location.origin }) }>Log Out</button>;
+    return <a onClick={ () => logout({ returnTo: window.location.origin }) }>Log Out</a>;
   } else {
     return <div>Not logged in yet</div>;
   }
